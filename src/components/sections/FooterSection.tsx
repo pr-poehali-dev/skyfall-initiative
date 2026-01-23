@@ -95,9 +95,15 @@ export function FooterSection() {
         </div>
 
         {/* Legal Info */}
-        <div className="pt-6 mt-6 border-t border-zinc-800">
+        <div className="pt-6 mt-6 border-t border-zinc-800 space-y-3">
           <p className="text-xs text-zinc-500 leading-relaxed">
             ПАО Банк ВТБ. ОГРН 1027739609391. Лицензия № 1000. Адрес: 191144, г. Санкт-Петербург, Дегтярный переулок, д.11, лит. А
+          </p>
+          <p className="text-xs text-zinc-500 leading-relaxed">
+            АО «ТБанк». Лицензия № 2673. Адрес: 123060, г. Москва, 1-й Волоколамский проезд, дом 10, стр.1
+          </p>
+          <p className="text-xs text-zinc-500 leading-relaxed">
+            «Газпромбанк» (Акционерное общество). ОГРН 1027700167110. Лицензия № 354. Адрес: 117420, г. Москва, ул. Намёткина, д.16, к.1
           </p>
         </div>
       </div>
