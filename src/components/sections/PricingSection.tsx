@@ -37,6 +37,15 @@ export function PricingSection() {
                 plan.highlighted ? "bg-zinc-100 border-zinc-100" : "bg-zinc-900/50 border-zinc-800/50"
               }`}
             >
+              {/* Card Image */}
+              <div className="mb-6 -mx-8 -mt-8">
+                <img 
+                  src="https://cdn.poehali.dev/projects/4cd701e3-2550-41ed-aa61-7d339d60a356/files/4b240bf4-5e76-424f-a5c3-7a6623e561fe.jpg"
+                  alt="ВТБ Дебетовая карта"
+                  className="w-full h-48 object-cover rounded-t-2xl"
+                />
+              </div>
+              
               {/* Plan Header */}
               <div className="mb-6">
                 <h3
