@@ -8,7 +8,31 @@ const plans = [
     period: "/год",
     features: ["Кэшбэк до 1.5%", "На остаток до 4.5% годовых", "Бесплатное обслуживание", "Возраст от 18 до 70 лет", "Моментальное оформление"],
     cta: "Оформить карту",
+    url: "https://t.fincpanetwork.ru/click/77158/193/?erid=Kra23hiMc",
+    image: "https://cdn.poehali.dev/projects/4cd701e3-2550-41ed-aa61-7d339d60a356/files/4b240bf4-5e76-424f-a5c3-7a6623e561fe.jpg",
+    highlighted: false,
+  },
+  {
+    name: "Тинькофф Black",
+    description: "Премиальный кэшбэк и высокий процент",
+    price: "0 ₽",
+    period: "/год",
+    features: ["Кэшбэк от 1% до 30%", "На остаток до 7% годовых", "Бесплатное обслуживание", "Возраст от 18 лет", "Доставка курьером"],
+    cta: "Оформить карту",
+    url: "https://trk.ppdu.ru/click/SPlurCmT?erid=Kra23xCCG",
+    image: "https://cdn.poehali.dev/projects/4cd701e3-2550-41ed-aa61-7d339d60a356/files/b812c49d-700a-4d1b-acfb-35ce150df23b.jpg",
     highlighted: true,
+  },
+  {
+    name: "Газпромбанк Умная карта",
+    description: "Надёжность и выгодные условия",
+    price: "0 ₽",
+    period: "/год",
+    features: ["Кэшбэк до 10%", "На остаток до 6% годовых", "Бесплатное обслуживание", "Возраст от 18 лет", "Снятие без комиссии"],
+    cta: "Оформить карту",
+    url: "",
+    image: "https://cdn.poehali.dev/projects/4cd701e3-2550-41ed-aa61-7d339d60a356/files/e349af90-17d5-4317-a511-61ea95a5c1af.jpg",
+    highlighted: false,
   },
 ]
 
@@ -28,8 +52,7 @@ export function PricingSection() {
         </div>
 
         {/* Pricing Grid */}
-        <div className="flex justify-center">
-        <div className="max-w-md w-full">
+        <div className="grid md:grid-cols-3 gap-6">
           {plans.map((plan) => (
             <div
               key={plan.name}
@@ -40,8 +63,8 @@ export function PricingSection() {
               {/* Card Image */}
               <div className="mb-6 -mx-8 -mt-8">
                 <img 
-                  src="https://cdn.poehali.dev/projects/4cd701e3-2550-41ed-aa61-7d339d60a356/files/4b240bf4-5e76-424f-a5c3-7a6623e561fe.jpg"
-                  alt="ВТБ Дебетовая карта"
+                  src={plan.image}
+                  alt={plan.name}
                   className="w-full h-48 object-cover rounded-t-2xl"
                 />
               </div>
@@ -79,21 +102,29 @@ export function PricingSection() {
               </ul>
 
               {/* CTA */}
-              <a
-                href="https://t.fincpanetwork.ru/click/77158/193/?erid=Kra23hiMc"
-                target="_blank"
-                rel="noopener noreferrer"
-                className={`block w-full py-3 px-6 text-center rounded-full font-medium text-sm transition-colors mt-auto ${
-                  plan.highlighted
-                    ? "bg-zinc-900 text-zinc-100 hover:bg-zinc-800"
-                    : "bg-zinc-800 text-zinc-100 hover:bg-zinc-700"
-                }`}
-              >
-                {plan.cta}
-              </a>
+              {plan.url ? (
+                <a
+                  href={plan.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`block w-full py-3 px-6 text-center rounded-full font-medium text-sm transition-colors mt-auto ${
+                    plan.highlighted
+                      ? "bg-zinc-900 text-zinc-100 hover:bg-zinc-800"
+                      : "bg-zinc-800 text-zinc-100 hover:bg-zinc-700"
+                  }`}
+                >
+                  {plan.cta}
+                </a>
+              ) : (
+                <button
+                  disabled
+                  className="block w-full py-3 px-6 text-center rounded-full font-medium text-sm transition-colors mt-auto bg-zinc-800 text-zinc-100 opacity-50 cursor-not-allowed"
+                >
+                  {plan.cta}
+                </button>
+              )}
             </div>
           ))}
-        </div>
         </div>
       </div>
     </section>
