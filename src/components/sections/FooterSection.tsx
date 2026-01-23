@@ -93,6 +93,13 @@ export function FooterSection() {
             </a>
           </div>
         </div>
+
+        {/* Legal Info */}
+        <div className="pt-6 mt-6 border-t border-zinc-900">
+          <p className="text-xs text-zinc-600 leading-relaxed">
+            ПАО Банк ВТБ. ОГРН 1027739609391. Лицензия № 1000. Адрес: 191144, г. Санкт-Петербург, Дегтярный переулок, д.11, лит. А
+          </p>
+        </div>
       </div>
     </footer>
   )
