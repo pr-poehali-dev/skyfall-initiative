@@ -27,10 +27,10 @@ export function FeaturesSection() {
         >
           <p className="text-sm font-medium text-zinc-500 uppercase tracking-wider mb-4">Функции</p>
           <h2 className="font-display text-3xl md:text-4xl font-bold text-zinc-100 mb-4">
-            Все для вашего успеха
+            Почему мы?
           </h2>
           <p className="text-zinc-500 max-w-xl mx-auto text-balance">
-            Мощные инструменты, которые помогут выпускать продукты быстрее.
+            Простой способ найти и оформить выгодные банковские продукты.
           </p>
         </motion.div>
 
@@ -53,10 +53,10 @@ export function FeaturesSection() {
                   >
                     <BarChart3 className="w-5 h-5 text-zinc-400 group-hover:text-zinc-200 transition-colors" />
                   </motion.div>
-                  <p className="font-heading font-semibold text-zinc-100">Дашборд в реальном времени</p>
+                  <p className="font-heading font-semibold text-zinc-100">Сравнение предложений</p>
                 </div>
                 <p className="text-zinc-500 text-sm mb-5">
-                  Отслеживайте важные метрики с настраиваемыми панелями.
+                  Сравнивайте ставки, лимиты и условия от разных банков в одном месте.
                 </p>
                 <div className="rounded-xl border border-zinc-800 bg-zinc-950 p-4 overflow-hidden">
                   <div className="flex items-center justify-between mb-4">
@@ -74,7 +74,7 @@ export function FeaturesSection() {
                         transition={{ delay: 0.5 }}
                       >
                         <div className="w-2 h-2 rounded-full bg-zinc-400" />
-                        <span className="text-xs text-zinc-500">Пользователи</span>
+                        <span className="text-xs text-zinc-500">Кредиты</span>
                       </motion.div>
                       <motion.div
                         className="flex items-center gap-1.5"
@@ -84,16 +84,16 @@ export function FeaturesSection() {
                         transition={{ delay: 0.6 }}
                       >
                         <div className="w-2 h-2 rounded-full bg-zinc-600" />
-                        <span className="text-xs text-zinc-500">Выручка</span>
+                        <span className="text-xs text-zinc-500">Карты</span>
                       </motion.div>
                     </div>
                   </div>
                   {/* Animated metrics row */}
                   <div className="grid grid-cols-3 gap-3 mb-4">
                     {[
-                      { label: "Пользователи", value: "12,4 тыс", change: "+12%" },
-                      { label: "Выручка", value: "4,8 млн ₽", change: "+8%" },
-                      { label: "Конверсия", value: "3,2%", change: "+2%" },
+                      { label: "Кредиты", value: "8-18%", change: "ставки" },
+                      { label: "Карты", value: "0-2%", change: "кэшбэк" },
+                      { label: "Вклады", value: "15-20%", change: "доход" },
                     ].map((metric, i) => (
                       <motion.div
                         key={metric.label}
@@ -162,9 +162,9 @@ export function FeaturesSection() {
                   >
                     <Zap className="w-5 h-5 text-zinc-400 group-hover:text-zinc-200 transition-colors" />
                   </motion.div>
-                  <p className="font-heading font-semibold text-zinc-100">Молниеносная скорость</p>
+                  <p className="font-heading font-semibold text-zinc-100">Быстрое одобрение</p>
                 </div>
-                <p className="text-zinc-500 text-sm mb-5">Оптимизировано для скорости на любом масштабе.</p>
+                <p className="text-zinc-500 text-sm mb-5">Ответ от банка в течение 5 минут после отправки заявки.</p>
                 <div className="mt-auto">
                   <div className="flex items-baseline gap-2 mb-3">
                     <motion.span
@@ -173,7 +173,7 @@ export function FeaturesSection() {
                       whileInView={{ opacity: 1 }}
                       viewport={{ once: true }}
                     >
-                      99.9%
+                      5 мин
                     </motion.span>
                     <span className="text-zinc-500 text-sm">аптайм</span>
                   </div>
@@ -181,7 +181,7 @@ export function FeaturesSection() {
                     <motion.div
                       className="h-full bg-gradient-to-r from-zinc-500 to-zinc-300 rounded-full"
                       initial={{ width: "0%" }}
-                      whileInView={{ width: "99.9%" }}
+                      whileInView={{ width: "100%" }}
                       viewport={{ once: true }}
                       transition={{ duration: 1.5, delay: 0.3, ease: "easeOut" }}
                     />
@@ -208,11 +208,11 @@ export function FeaturesSection() {
                   >
                     <Command className="w-5 h-5 text-zinc-400 group-hover:text-zinc-200 transition-colors" />
                   </motion.div>
-                  <p className="font-heading font-semibold text-zinc-100">Сначала клавиатура</p>
+                  <p className="font-heading font-semibold text-zinc-100">Прозрачные условия</p>
                 </div>
-                <p className="text-zinc-500 text-sm mb-5">Любое действие на расстоянии одной клавиши.</p>
+                <p className="text-zinc-500 text-sm mb-5">Никаких скрытых комиссий. Все условия — на одной странице.</p>
                 <div className="flex justify-center gap-2 mt-auto">
-                  {["Cmd", "K"].map((key, i) => (
+                  {["0", "%"].map((key, i) => (
                     <motion.div
                       key={key}
                       className="flex items-center justify-center w-12 h-12 rounded-xl bg-zinc-800/80 border border-zinc-700/50 shadow-lg"
@@ -252,9 +252,9 @@ export function FeaturesSection() {
                   >
                     <Layers className="w-5 h-5 text-zinc-400 group-hover:text-zinc-200 transition-colors" />
                   </motion.div>
-                  <p className="font-heading font-semibold text-zinc-100">100+ интеграций</p>
+                  <p className="font-heading font-semibold text-zinc-100">Партнёры — ведущие банки</p>
                 </div>
-                <p className="text-zinc-500 text-sm mb-5">Подключайте инструменты, которыми пользуетесь ежедневно.</p>
+                <p className="text-zinc-500 text-sm mb-5">Сотрудничаем с проверенными банками — гарантия качества и безопасности.</p>
                 <div className="grid grid-cols-8 gap-2 mt-auto">
                   {integrationLogos.map((logo, i) => (
                     <motion.div
