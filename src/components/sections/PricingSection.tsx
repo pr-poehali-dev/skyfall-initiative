@@ -40,7 +40,7 @@ export function PricingSection() {
               {/* Card Image */}
               <div className="mb-6 -mx-8 -mt-8">
                 <img 
-                  src="https://cdn.poehali.dev/projects/4cd701e3-2550-41ed-aa61-7d339d60a356/files/d981b2fe-317b-4ab3-ac07-c0364b538eef.jpg"
+                  src="https://cdn.poehali.dev/projects/4cd701e3-2550-41ed-aa61-7d339d60a356/files/8178c954-22e6-42df-9549-6feaebbb2b84.jpg"
                   alt="ВТБ Дебетовая карта"
                   className="w-full h-48 object-cover rounded-t-2xl"
                 />
