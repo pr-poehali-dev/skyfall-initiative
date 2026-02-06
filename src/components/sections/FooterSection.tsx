@@ -1,4 +1,4 @@
-import { Github, Twitter, Linkedin } from "lucide-react"
+import Icon from "@/components/ui/icon"
 
 const footerLinks = {
   product: [
@@ -82,14 +82,14 @@ export function FooterSection() {
         <div className="pt-8 border-t border-zinc-900 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-sm text-zinc-600">© {new Date().getFullYear()} Velocite. Все права защищены.</p>
           <div className="flex items-center gap-4">
-            <a href="#" className="text-zinc-500 hover:text-zinc-300 transition-colors" aria-label="GitHub">
-              <Github className="w-5 h-5" />
-            </a>
-            <a href="#" className="text-zinc-500 hover:text-zinc-300 transition-colors" aria-label="Twitter">
-              <Twitter className="w-5 h-5" />
-            </a>
-            <a href="#" className="text-zinc-500 hover:text-zinc-300 transition-colors" aria-label="LinkedIn">
-              <Linkedin className="w-5 h-5" />
+            <a 
+              href="https://t.me/excluit" 
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded-full text-sm font-medium transition-colors"
+            >
+              <Icon name="Send" size={16} />
+              Связаться в Telegram
             </a>
           </div>
         </div>
