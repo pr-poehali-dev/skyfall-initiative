@@ -30,7 +30,7 @@ const plans = [
     period: "/год",
     features: ["Кэшбэк до 35%", "На остаток до 6% годовых", "Бесплатное обслуживание", "Возраст от 18 лет", "Снятие без комиссии"],
     cta: "Оформить карту",
-    url: "",
+    url: "https://rko-group.ru/s/WWiIT0e",
     image: "https://cdn.poehali.dev/projects/4cd701e3-2550-41ed-aa61-7d339d60a356/files/e349af90-17d5-4317-a511-61ea95a5c1af.jpg",
     highlighted: false,
   },
